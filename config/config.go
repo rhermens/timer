@@ -14,6 +14,6 @@ type Config struct {
 func DefaultConfig() Config {
 	return Config{
 		Directory: path.Join(xdg.DataHome, "timer"),
-		Format:    "%s,%s\n",
+		Format:    "\n%s,%s",
 	}
 }
