@@ -25,6 +25,8 @@ func Execute() {
 
 func init() {
 	cobra.OnInitialize(initConfig)
+	rootCmd.AddCommand(trackCmd)
+	rootCmd.AddCommand(currentCmd)
 }
 
 func initConfig() {

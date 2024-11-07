@@ -11,10 +11,6 @@ import (
 	"github.com/spf13/cobra"
 )
 
-func init() {
-	rootCmd.AddCommand(currentCmd)
-}
-
 var currentCmd = &cobra.Command{
 	Use: "current <DESCRIPTION>",
 	Run: func(cmd *cobra.Command, args []string) {
